@@ -1,11 +1,21 @@
 import type { Metadata } from 'next';
 import { PostHogProvider } from '@/components/analytics/PostHogProvider';
-import { DemoBadge } from '@/components/DemoBadge';
+import { SidebarProvider } from '@/context/SidebarContext';
+import { ThemeProvider } from '@/context/ThemeContext';
 import { routing } from '@/libs/i18nNavigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
+import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
+import NextTopLoader from 'nextjs-toploader';
 import '@/styles/global.css';
+
+// Initialize Inter font
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   icons: [
@@ -55,16 +65,20 @@ export default async function RootLayout(props: {
   // which dynamically adds a `style` attribute to the body tag.
 
   return (
-    <html lang={locale}>
-      <body suppressHydrationWarning>
+    <html lang={locale} className={inter.variable}>
+      <body suppressHydrationWarning className={`${inter.className} dark:bg-gray-900`}>
         <NextIntlClientProvider
           locale={locale}
           messages={messages}
         >
           <PostHogProvider>
-            {props.children}
+            <NextTopLoader height={5} color="#465fff" />
+            <ThemeProvider>
+              <SidebarProvider>
+                {props.children}
+              </SidebarProvider>
+            </ThemeProvider>
           </PostHogProvider>
-          <DemoBadge />
         </NextIntlClientProvider>
       </body>
     </html>

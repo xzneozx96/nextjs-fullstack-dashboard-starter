@@ -12,7 +12,7 @@ export const Sponsors = () => (
             rel="noopener"
           >
             <Image
-              src="/assets/images/clerk-logo-dark.png"
+              src="/images/clerk-logo-dark.png"
               alt="Clerk – Authentication & User Management for Next.js"
               width={260}
               height={224}
@@ -22,7 +22,7 @@ export const Sponsors = () => (
         <td className="border-2 border-gray-300 p-3">
           <a href="https://www.coderabbit.ai?utm_source=next_js_starter&utm_medium=github&utm_campaign=next_js_starter_oss_2025" target="_blank" rel="noopener">
             <Image
-              src="/assets/images/coderabbit-logo-light.svg"
+              src="/images/coderabbit-logo-light.svg"
               alt="CodeRabbit"
               width={260}
               height={224}
@@ -36,7 +36,7 @@ export const Sponsors = () => (
             rel="noopener"
           >
             <Image
-              src="/assets/images/sentry-dark.png"
+              src="/images/sentry-dark.png"
               alt="Sentry"
               width={260}
               height={224}
@@ -48,7 +48,7 @@ export const Sponsors = () => (
         <td className="border-2 border-gray-300 p-3">
           <a href="https://launch.arcjet.com/Q6eLbRE">
             <Image
-              src="/assets/images/arcjet-light.svg"
+              src="/images/arcjet-light.svg"
               alt="Arcjet"
               width={260}
               height={224}
@@ -58,7 +58,7 @@ export const Sponsors = () => (
         <td className="border-2 border-gray-300 p-3">
           <a href="https://sevalla.com/">
             <Image
-              src="/assets/images/sevalla-light.png"
+              src="/images/sevalla-light.png"
               alt="Sevalla"
               width={260}
               height={224}
@@ -68,7 +68,7 @@ export const Sponsors = () => (
         <td className="border-2 border-gray-300 p-3">
           <a href="https://l.crowdin.com/next-js" target="_blank" rel="noopener">
             <Image
-              src="/assets/images/crowdin-dark.png"
+              src="/images/crowdin-dark.png"
               alt="Crowdin"
               width={260}
               height={224}
@@ -98,7 +98,7 @@ export const Sponsors = () => (
             rel="noopener"
           >
             <Image
-              src="/assets/images/better-stack-dark.png"
+              src="/images/better-stack-dark.png"
               alt="Better Stack"
               width={260}
               height={224}
@@ -112,7 +112,7 @@ export const Sponsors = () => (
             rel="noopener"
           >
             <Image
-              src="/assets/images/checkly-logo-light.png"
+              src="/images/checkly-logo-light.png"
               alt="Checkly"
               width={260}
               height={224}
@@ -124,7 +124,7 @@ export const Sponsors = () => (
         <td className="border-2 border-gray-300 p-3">
           <a href="https://nextjs-boilerplate.com/pro-saas-starter-kit">
             <Image
-              src="/assets/images/nextjs-boilerplate-saas.png"
+              src="/images/nextjs-boilerplate-saas.png"
               alt="Next.js SaaS Boilerplate"
               width={260}
               height={224}
