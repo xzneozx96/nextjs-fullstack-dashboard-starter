@@ -88,19 +88,20 @@ const AppHeader: React.FC = () => {
 
           <Link href="/" className="lg:hidden">
             <Image
-              width={154}
+              width={32}
               height={32}
-              className="dark:hidden"
+              className="inline-block dark:hidden"
               src="./images/logo/logo.svg"
               alt="Logo"
             />
             <Image
-              width={154}
+              width={32}
               height={32}
-              className="hidden dark:block"
+              className="hidden dark:inline-block"
               src="./images/logo/logo-dark.svg"
               alt="Logo"
             />
+            <span className="text-lg font-bold dark:text-white align-middle ml-3">IELTS AI Tutor</span>
           </Link>
 
           <button

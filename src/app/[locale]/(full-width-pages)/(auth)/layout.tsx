@@ -23,14 +23,16 @@ export default function AuthLayout({
               <div className="flex flex-col items-center max-w-xs">
                 <Link href="/" className="block mb-4">
                   <Image
-                    width={231}
+                    width={48}
                     height={48}
                     src="./images/logo/auth-logo.svg"
                     alt="Logo"
+                    className="inline-block"
                   />
+                  <span className="text-2xl font-bold text-white align-middle ml-3">IELTS AI Tutor</span>
                 </Link>
                 <p className="text-center text-gray-400 dark:text-white/60">
-                  Free and Open-Source Tailwind CSS Admin Dashboard Template
+                  Advanced AI-powered IELTS Preparation and Tutoring Platform
                 </p>
               </div>
             </div>

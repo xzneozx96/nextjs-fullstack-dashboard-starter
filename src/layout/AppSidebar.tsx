@@ -315,19 +315,20 @@ const AppSidebar: React.FC = () => {
             ? (
                 <>
                   <Image
-                    className="dark:hidden"
+                    className="inline-block dark:hidden"
                     src="/images/logo/logo.svg"
                     alt="Logo"
-                    width={150}
-                    height={40}
+                    width={32}
+                    height={32}
                   />
                   <Image
-                    className="hidden dark:block"
+                    className="hidden dark:inline-block"
                     src="/images/logo/logo-dark.svg"
                     alt="Logo"
-                    width={150}
-                    height={40}
+                    width={32}
+                    height={32}
                   />
+                  <span className="text-lg font-bold dark:text-white align-middle ml-3">IELTS AI Tutor</span>
                 </>
               )
             : (
